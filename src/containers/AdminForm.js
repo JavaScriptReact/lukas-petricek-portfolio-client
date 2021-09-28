@@ -49,6 +49,7 @@ function AdminForm({ action }) {
         { withCredentials: true }
       )
       .then(({ data }) => {
+        alert(JSON.stringify(data));
         if (data) {
           history.push("/add-project");
         }

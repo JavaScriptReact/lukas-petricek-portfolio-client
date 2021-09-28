@@ -85,6 +85,7 @@ function AddProject() {
         withCredentials: true,
       })
       .then(({ data }) => {
+        alert(JSON.stringify(data));
         if (!data) history.replace("/portfolio");
       })
       .catch((err) => alert(JSON.stringify(err)));
