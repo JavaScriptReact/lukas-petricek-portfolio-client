@@ -44,6 +44,7 @@ function Portfolio({ set_page_timeline }) {
   const { data, loading, error } = useQuery(get_portfolios);
 
   useEffect(() => {
+    console.log("Data: ", data);
     if (data) {
       set_portfolios(data.portfolios);
     }
