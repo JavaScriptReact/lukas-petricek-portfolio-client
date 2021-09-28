@@ -64,8 +64,7 @@ function Portfolio({ set_page_timeline }) {
       display: "block",
     });
     set_page_timeline(tl);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [set_page_timeline, tl]);
 
   const filter = (name) => {
     history.push(`${path}?filter=${name}`);
