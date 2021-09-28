@@ -41,13 +41,21 @@ function Portfolio({ set_page_timeline }) {
     id: "",
   });
   const [portfolios, set_portfolios] = useState([]);
-  const { data } = useQuery(get_portfolios);
+  const { data, loading, error } = useQuery(get_portfolios);
 
   useEffect(() => {
     if (data) {
       set_portfolios(data.portfolios);
     }
   }, [data]);
+
+  useEffect(() => {
+    console.log(error);
+  }, [error]);
+
+  useEffect(() => {
+    console.log(loading);
+  }, [loading]);
 
   useEffect(() => {
     tl.to(".portfolio", 0.5, {
