@@ -9,7 +9,7 @@ import "./styles/styl/style.css";
 
 const client = new ApolloClient({
   cache: new InMemoryCache(),
-  uri: "https://www.lukas-petricek.com/graphql",
+  uri: "http://www.lukas-petricek.com/graphql",
 });
 
 function Application() {
