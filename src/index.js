@@ -9,7 +9,7 @@ import "./styles/styl/style.css";
 
 const client = new ApolloClient({
   cache: new InMemoryCache(),
-  uri: "http://www.lukas-petricek.com/graphql",
+  uri: "https://.lukas-petricek-portfolio.heroku.app.com/graphql",
 });
 
 function Application() {
