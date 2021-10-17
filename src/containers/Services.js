@@ -24,7 +24,7 @@ function Courses({ set_page_timeline }) {
       ref={courses}
       style={{
         backgroundImage:
-          "url(https://lukas-petricek-portfolio.herokuapp.com/images/about.jpg)",
+          "url(https://api.lukas-petricek.com/images/about.jpg)",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
@@ -35,7 +35,7 @@ function Courses({ set_page_timeline }) {
           className="design"
           style={{
             backgroundImage:
-              "url(https://lukas-petricek-portfolio.herokuapp.com/images/design-background.jpeg)",
+              "url(https://api.lukas-petricek.com/images/design-background.jpeg)",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
@@ -49,7 +49,7 @@ function Courses({ set_page_timeline }) {
           className="web design"
           style={{
             backgroundImage:
-              "url(https://lukas-petricek-portfolio.herokuapp.com/images/web-design.jpeg)",
+              "url(https://api.lukas-petricek.com/images/web-design.jpeg)",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
@@ -63,7 +63,7 @@ function Courses({ set_page_timeline }) {
           className="web development"
           style={{
             backgroundImage:
-              "url(https://lukas-petricek-portfolio.herokuapp.com/images/web-development.jpeg)",
+              "url(https://api.lukas-petricek.com/images/web-development.jpeg)",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
@@ -77,7 +77,7 @@ function Courses({ set_page_timeline }) {
           className="E-commerence"
           style={{
             backgroundImage:
-              "url(https://lukas-petricek-portfolio.herokuapp.com/images/ecommernce.jpeg)",
+              "url(https://api.lukas-petricek.com/images/ecommernce.jpeg)",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",

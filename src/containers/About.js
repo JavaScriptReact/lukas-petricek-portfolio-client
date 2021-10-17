@@ -95,7 +95,7 @@ function About({ set_page_timeline, anim }) {
   return (
     <>
       <section className="about">
-        <SuperImage url="https://lukas-petricek-portfolio.herokuapp.com/images/about.jpg" />
+        <SuperImage url="https://api.lukas-petricek.com/images/about.jpg" />
         <main className="sm-section">
           <span className="sm">
             {sm_data.map((data) => {
@@ -120,7 +120,7 @@ function About({ set_page_timeline, anim }) {
           <div className="logo">
             <img
               src={
-                "https://lukas-petricek-portfolio.herokuapp.com/images/personal.jpg"
+                "https://api.lukas-petricek.com/images/personal.jpg"
               }
               alt="logo"
             />

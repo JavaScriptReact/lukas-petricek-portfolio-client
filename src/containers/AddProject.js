@@ -124,7 +124,7 @@ function AddProject() {
       <SuperImage
         height={400}
         width={400}
-        url="https://lukas-petricek-portfolio.herokuapp.com/images/contact-us-background.jpeg"
+        url="https://api.lukas-petricek.com/images/contact-us-background.jpeg"
       />
       <Paper className={classes.root} elevation={12}>
         <form

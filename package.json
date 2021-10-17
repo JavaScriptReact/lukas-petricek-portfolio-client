@@ -19,7 +19,7 @@
     "swiper": "^6.7.5",
     "web-vitals": "^1.1.2"
   },
-  "proxy": "https://lukas-petricek-portfolio.heroku.app.com",
+  "proxy": "https://api.lukas-petricek.com",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build"

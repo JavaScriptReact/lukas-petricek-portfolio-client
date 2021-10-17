@@ -15,7 +15,7 @@ const useStyles = makeStyles(() => ({
     width: "100%",
     height: "100%",
     backgroundImage:
-      "url(https://lukas-petricek-portfolio.herokuapp.com/images/contact-us-background.jpeg)",
+      "url(https://api.lukas-petricek.com/images/contact-us-background.jpeg)",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     position: "absolute",
@@ -153,7 +153,7 @@ function Contact({ set_page_timeline }) {
           <img
             className={classes.img}
             src={
-              "https://lukas-petricek-portfolio.herokuapp.com/images/contact us.jpg"
+              "https://api.lukas-petricek.com/images/contact us.jpg"
             }
             alt="contact-us-img"
           />
