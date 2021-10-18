@@ -81,7 +81,7 @@ function AddProject() {
 
   useEffect(() => {
     axios
-      .get("https://lukas-petricek-portfolio.herokuapp.com/verify-admin", {
+      .get("https://api.lukas-petricek.com/verify-admin", {
         withCredentials: true,
       })
       .then(({ data }) => {
