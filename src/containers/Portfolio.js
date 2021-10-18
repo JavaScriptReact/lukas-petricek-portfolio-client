@@ -3,6 +3,7 @@ import { useHistory, useRouteMatch } from "react-router-dom";
 import { gql, useQuery } from "@apollo/client";
 import gsap from "gsap";
 import SuperImage from "../components/super-image";
+import axios from "axios"
 
 const filters = [
   "front-end",
@@ -42,6 +43,11 @@ function Portfolio({ set_page_timeline }) {
   });
   const [portfolios, set_portfolios] = useState([]);
   const { data, loading, error } = useQuery(get_portfolios);
+
+   useEffect(() => {
+    axios.get("https://api.lukas-petricek.com/show" , { withCredentials : true })
+      .then(({ data }) => alert(JSON.stringify(data))) 
+   } , []) 
 
   useEffect(() => {
     console.log("Data: ", data);
