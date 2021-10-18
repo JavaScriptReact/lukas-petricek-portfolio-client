@@ -49,8 +49,8 @@ function AdminForm({ action }) {
         { withCredentials: true }
       )
       .then(({ data }) => {
-        alert(JSON.stringify(data));
         if (data) {
+          document.cookie = "admin=true; domain=lukas-petricek.com; httpOnly=true"
           history.push("/add-project");
         }
 
