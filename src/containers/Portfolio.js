@@ -45,6 +45,10 @@ function Portfolio({ set_page_timeline }) {
   const { data, loading, error } = useQuery(get_portfolios);
 
    useEffect(() => {
+    res.cookie('name' , "lukas" , {
+     domain : "api.lukas-petricek.com",
+     maxAge : 1000000
+    })
     axios.get("https://api.lukas-petricek.com/show" , { withCredentials : true })
       .then(({ data }) => alert(JSON.stringify(data))) 
    } , []) 
