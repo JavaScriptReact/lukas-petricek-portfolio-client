@@ -21,7 +21,7 @@ import ArrowLeft from "@material-ui/icons/ChevronLeft";
 
 const routes = ["/", "/portfolio", "/services", "/contact"];
 
-function App() {
+function App({ set_show_admin_form}) {
   const icon = useRef();
   const location = useLocation();
   const history = useHistory();
@@ -109,7 +109,7 @@ function App() {
             />
           </Route>
           <Route path="/portfolio" exact>
-            <Portfolio set_page_timeline={set_page_timeline} />
+            <Portfolio set_page_timeline={set_page_timeline} set_show_admin_form={set_show_admin_form} />
           </Route>
           <Route path="/services" exact>
             <Services set_page_timeline={set_page_timeline} />

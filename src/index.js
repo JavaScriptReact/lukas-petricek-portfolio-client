@@ -25,7 +25,7 @@ function Application() {
   return (
     <ApolloProvider client={client}>
       <Router>
-        {show_admin_form ? <AdminForm action={set_show_admin_form} /> : <App />}
+        {show_admin_form ? <AdminForm action={set_show_admin_form} /> : <App set_show_admin_form={set_show_admin_form} />}
       </Router>
     </ApolloProvider>
   );

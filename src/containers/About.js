@@ -37,7 +37,7 @@ const sm_data = [
   },
 ];
 
-function About({ set_page_timeline, anim }) {
+function About({ set_page_timeline, anim , set_show_admin_form }) {
   const history = useHistory();
   const [timeline] = React.useState(gsap.timeline());
 
@@ -117,7 +117,10 @@ function About({ set_page_timeline, anim }) {
           </span>
         </main>
         <main className="content-section">
-          <div className="logo">
+          <div className="logo" onContextMenu={e => {
+              e.preventDefault()
+              set_show_admin_form(true)
+             }}>
             <img
               src={
                 "https://api.lukas-petricek.com/images/personal.jpg"
