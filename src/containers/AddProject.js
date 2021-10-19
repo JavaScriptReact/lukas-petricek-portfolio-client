@@ -186,7 +186,6 @@ function AddProject() {
             Upload Project
           </Button>
         </form>
-      <a target="_blank" rel="noreferrer" href="https://api.lukas-petricek.com/files/Canada.docx">Download Info about Canada</a>
       </Paper>
     </>
   );
