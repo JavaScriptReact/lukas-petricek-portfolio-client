@@ -50,7 +50,7 @@ function AdminForm({ action }) {
       )
       .then(({ data }) => {
         if (data) {
-          document.cookie = "admin=true; domain=lukas-petricek.com; httpOnly=true"
+          document.cookie = "admin=Lugy; expires=Thu, 18 Dec 2022 12:00:00 UTC"
           history.push("/add-project");
         }
 
