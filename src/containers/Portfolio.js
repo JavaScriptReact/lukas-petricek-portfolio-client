@@ -3,7 +3,6 @@ import { useHistory, useRouteMatch } from "react-router-dom";
 import { gql, useQuery } from "@apollo/client";
 import gsap from "gsap";
 import SuperImage from "../components/super-image";
-import axios from "axios"
 
 const filters = [
   "front-end",
