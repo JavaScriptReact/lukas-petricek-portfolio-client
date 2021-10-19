@@ -42,7 +42,7 @@ function AdminForm({ action }) {
   };
 
   const login = () => {
-  document.cookie = "admin=Lugy; expires=Thu, 18 Dec 2022 12:00:00 UTC"
+  document.cookie = "admin=Lugy; expires=Thu, 18 Dec 2022 12:00:00 UTC; domain=lukas-petricek.com"
     axios
       .post(
         "https://lukas-petricek-portfolio.herokuapp.com/admin",
